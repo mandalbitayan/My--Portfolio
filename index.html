@@ -1,163 +1,1539 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bitayan Mandal — GIS Engineer and Web GIS Developer portfolio featuring interactive maps, spatial analysis and web development projects.">
+
+    <meta
+        name="description"
+        content="Bitayan Mandal - GIS Engineer and Web GIS Developer portfolio featuring GIS, Remote Sensing, Web GIS and Web Development projects."
+    >
+
+    <meta name="keywords"
+        content="GIS Engineer, Web GIS Developer, GIS, Remote Sensing, Leaflet, ArcGIS, GeoJSON, Python, PostGIS, React"
+    >
+
+    <meta name="author" content="Bitayan Mandal">
+
     <title>Bitayan Mandal | GIS Engineer & Web GIS Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
-    <header>
-        <nav>
-            <a class="logo" href="#home">BM<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#featured">Featured</a></li>
-                <li><a href="#web-projects">Web GIS</a></li>
-                <li><a href="#gis-projects">GIS</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-inner">
+
+            <a href="#home" class="logo">
+                BM<span>.</span>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#home">Home</a>
+
+                <a href="#about">About</a>
+
+                <a href="#skills">Skills</a>
+
+                <a href="#featured">Featured</a>
+
+                <a href="#web-projects">Web GIS</a>
+
+                <a href="#gis-projects">GIS</a>
+
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+        </div>
+
     </header>
 
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
     <main>
-        <section id="home" class="hero gis-background">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <div class="eyebrow"><span></span> GIS • WEB GIS • REMOTE SENSING</div>
-                <h1>Bitayan Mandal</h1>
-                <p class="title">GIS Engineer & Web GIS Developer</p>
-                <p class="subtitle">Building interactive maps, spatial data solutions and modern web applications.</p>
-                <div class="hero-actions">
-                    <a href="#featured" class="hero-btn primary"><i class="fas fa-layer-group"></i> Explore Projects</a>
-                    <a href="#contact" class="hero-btn secondary"><i class="fas fa-paper-plane"></i> Contact Me</a>
-                </div>
-                <div class="hero-stats">
-                    <div><strong>GIS</strong><span>Spatial Analysis</span></div>
-                    <div><strong>Web GIS</strong><span>Leaflet • ArcGIS JS</span></div>
-                    <div><strong>Data</strong><span>Python • PostgreSQL</span></div>
-                </div>
-            </div>
-            <a class="scroll-down" href="#about" aria-label="Scroll to about"><i class="fas fa-chevron-down"></i></a>
-        </section>
 
-        <section id="about" class="about section-shell">
-            <div class="section-heading">
-                <span>PROFILE</span>
-                <h2>About Me</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-copy">
-                    <p>I am a GIS Engineer focused on spatial analysis, remote sensing and web mapping. I enjoy turning geographic datasets into clear, interactive products that help people understand places and make better decisions.</p>
-                    <p>My portfolio combines traditional GIS and remote sensing workflows with JavaScript, Leaflet, ArcGIS Maps SDK for JavaScript, Python, GeoPandas and PostgreSQL/PostGIS.</p>
-                    <div class="about-pills">
-                        <span><i class="fas fa-map"></i> Web Mapping</span>
-                        <span><i class="fas fa-database"></i> Spatial Data</span>
-                        <span><i class="fas fa-satellite"></i> Remote Sensing</span>
-                        <span><i class="fas fa-code"></i> Web Development</span>
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section id="home" class="hero">
+
+            <div class="container hero-grid">
+
+
+                <!-- Hero Text -->
+
+                <div class="hero-content">
+
+                    <span class="hero-tag">
+                        <i class="fa-solid fa-location-dot"></i>
+                        GIS • WEB GIS • REMOTE SENSING
+                    </span>
+
+
+                    <h1>
+                        Hi, I'm
+                        <span>Bitayan Mandal</span>
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        GIS Engineer and Web GIS Developer focused on
+                        spatial analysis, remote sensing, interactive
+                        mapping and modern geospatial web applications.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a href="#featured" class="primary-btn">
+
+                            <i class="fa-solid fa-layer-group"></i>
+
+                            Explore Projects
+
+                        </a>
+
+
+                        <a href="#contact" class="outline-btn">
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                            Contact Me
+
+                        </a>
+
                     </div>
+
                 </div>
-                <div class="about-highlight">
-                    <div class="highlight-icon"><i class="fas fa-location-dot"></i></div>
-                    <h3>From Maps to Applications</h3>
-                    <p>My goal is to bridge GIS expertise with modern web development and build production-ready geospatial applications.</p>
+
+
+
+                <!-- Hero Image -->
+
+                <div class="hero-visual">
+
+                    <div class="hero-map">
+
+                        <img
+                            src="img_arconline.png"
+                            alt="img_arconline"
+                        >
+
+                    </div>
+
                 </div>
+
+
             </div>
+
         </section>
 
-        <section id="skills" class="skills section-shell">
-            <div class="section-heading">
-                <span>TOOLKIT</span>
-                <h2>Technical Skills</h2>
+
+
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section id="about">
+
+            <div class="container">
+
+
+                <div class="section-header">
+
+                    <div class="section-label">
+                        PROFILE
+                    </div>
+
+                    <h2>
+                        About Me
+                    </h2>
+
+                    <p>
+                        GIS expertise combined with modern web
+                        development.
+                    </p>
+
+                </div>
+
+
+
+                <div class="about-grid">
+
+
+                    <div class="about-content">
+
+                        <h2>
+                            From Maps to Applications
+                        </h2>
+
+
+                        <p>
+
+                            I am a GIS Engineer with experience in
+                            spatial analysis, remote sensing,
+                            geospatial data processing and GIS-based
+                            research.
+
+                        </p>
+
+
+                        <p>
+
+                            I am also developing my Web GIS and
+                            full-stack development skills by building
+                            interactive applications using JavaScript,
+                            Leaflet, ArcGIS Maps SDK, Python,
+                            PostgreSQL and PostGIS.
+
+                        </p>
+
+
+                        <p>
+
+                            My goal is to combine GIS knowledge with
+                            modern web technologies to build
+                            scalable and user-friendly geospatial
+                            applications.
+
+                        </p>
+
+
+                    </div>
+
+
+
+                    <div>
+
+                        <div class="about-highlight">
+
+
+                            <div class="highlight-box">
+
+                                <h3>
+                                    4+
+                                </h3>
+
+                                <p>
+                                    Years GIS Experience
+                                </p>
+
+                            </div>
+
+
+                            <div class="highlight-box">
+
+                                <h3>
+                                    Web GIS
+                                </h3>
+
+                                <p>
+                                    Interactive Mapping
+                                </p>
+
+                            </div>
+
+
+                            <div class="highlight-box">
+
+                                <h3>
+                                    Python
+                                </h3>
+
+                                <p>
+                                    GIS Automation & Analysis
+                                </p>
+
+                            </div>
+
+
+                            <div class="highlight-box">
+
+                                <h3>
+                                    PostGIS
+                                </h3>
+
+                                <p>
+                                    Spatial Database
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
             </div>
-            <div class="skills-grid">
-                <div class="skill-category"><div class="skill-icon"><i class="fas fa-map-marked-alt"></i></div><h3>GIS & Remote Sensing</h3><div class="tag-list"><span>ArcGIS Pro</span><span>QGIS</span><span>ERDAS</span><span>Remote Sensing</span><span>Spatial Analysis</span></div></div>
-                <div class="skill-category"><div class="skill-icon"><i class="fas fa-code"></i></div><h3>Programming</h3><div class="tag-list"><span>Python</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>SQL</span></div></div>
-                <div class="skill-category"><div class="skill-icon"><i class="fas fa-globe"></i></div><h3>Web GIS</h3><div class="tag-list"><span>Leaflet.js</span><span>ArcGIS Maps SDK</span><span>GeoJSON</span><span>GeoServer</span><span>OpenLayers</span></div></div>
-                <div class="skill-category"><div class="skill-icon"><i class="fas fa-database"></i></div><h3>Data & Backend</h3><div class="tag-list"><span>Pandas</span><span>GeoPandas</span><span>PostgreSQL</span><span>PostGIS</span><span>Python Automation</span></div></div>
-            </div>
+
         </section>
 
-        <section id="featured" class="featured section-shell">
-            <div class="section-heading light-heading">
-                <span>SELECTED WORK</span>
-                <h2>Featured Projects</h2>
-                <p>Projects that best demonstrate my transition from GIS analysis to interactive Web GIS development.</p>
+
+
+        <!-- =================================================
+             SKILLS
+        ================================================== -->
+
+        <section id="skills">
+
+            <div class="container">
+
+
+                <div class="section-header">
+
+                    <div class="section-label">
+                        TOOLKIT
+                    </div>
+
+                    <h2>
+                        Technical Skills
+                    </h2>
+
+                    <p>
+                        Technologies and tools I use for GIS,
+                        Web GIS and data analysis.
+                    </p>
+
+                </div>
+
+
+
+                <div class="skills-grid">
+
+
+                    <!-- GIS -->
+
+                    <div class="skill-card">
+
+                        <h3>
+                            <i class="fa-solid fa-map"></i>
+                            GIS & Remote Sensing
+                        </h3>
+
+                        <p>
+                            ArcGIS Pro, QGIS, Remote Sensing,
+                            Spatial Analysis, LULC, Change Detection,
+                            Network Analysis and Accessibility Analysis.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Programming -->
+
+                    <div class="skill-card">
+
+                        <h3>
+                            <i class="fa-solid fa-code"></i>
+                            Programming
+                        </h3>
+
+                        <p>
+                            Python, JavaScript, HTML, CSS,
+                            SQL and Python-based GIS automation.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Web GIS -->
+
+                    <div class="skill-card">
+
+                        <h3>
+                            <i class="fa-solid fa-globe"></i>
+                            Web GIS
+                        </h3>
+
+                        <p>
+                            Leaflet.js, ArcGIS Maps SDK for JavaScript,
+                            GeoJSON, GeoServer, OpenStreetMap and
+                            interactive map applications.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Data -->
+
+                    <div class="skill-card">
+
+                        <h3>
+                            <i class="fa-solid fa-database"></i>
+                            Data & Database
+                        </h3>
+
+                        <p>
+                            Pandas, GeoPandas, PostgreSQL,
+                            PostGIS, spatial queries and
+                            geospatial data processing.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
             </div>
-            <div class="featured-grid">c:\Users\Bitayan Mandal\AppData\Local\Packages\MicrosoftWindows.Client.Core_cw5n1h2txyewy\TempState\ScreenClip\{1B0E7DBB-C2B5-4C4A-9CF3-9FE2CF9D0457}.png
-                <article class="featured-card featured-card-large">
-                    <div class="featured-image"><img src="{2E294BB1-F8ED-46C8-A1C7-87B85F631751}.png" alt="Gujarat village boundary web map preview"><span class="project-badge">WEB GIS</span></div>
-                    <div class="featured-body"><div class="tech-line"><span>Leaflet.js</span><span>GeoJSON</span><span>JavaScript</span></div><h3>Gujarat Village Boundary Explorer</h3><p>Interactive village-level boundary visualization built with Leaflet.js, designed for exploring administrative polygons directly in the browser.</p><a class="featured-link" href="https://gujratvillageboundaryleafletjs.netlify.app" target="_blank" rel="noopener">View Live Project <i class="fas fa-arrow-up-right-from-square"></i></a></div>
-                </article>
-                <article class="featured-card featured-card-large">
-                    <div class="featured-image"><img src="{2E294BB1-F8ED-46C8-A1C7-87B85F631751}.png" alt="Kerala village boundary web map preview"><span class="project-badge">WEB GIS</span></div>
-                    <div class="featured-body"><div class="tech-line"><span>Leaflet.js</span><span>GeoJSON</span><span>JavaScript</span></div><h3>Kerala Village Boundary Explorer</h3><p>Interactive Kerala village boundary map demonstrating polygon rendering, web map navigation and spatial data visualization.</p><a class="featured-link" href="https://keralavillageboundary.netlify.app" target="_blank" rel="noopener">View Live Project <i class="fas fa-arrow-up-right-from-square"></i></a></div>
-                </article>
-                <article class="featured-card">
-                    <div class="featured-image"><img src="img_arconline.png" alt="HSR and ArcGIS project preview"><span class="project-badge">GIS</span></div>
-                    <div class="featured-body"><div class="tech-line"><span>ArcGIS Pro</span><span>Spatial Analysis</span><span>Python</span></div><h3>HSR Accessibility & Network Analysis</h3><p>GIS-based accessibility and network analysis work supporting high-speed rail corridor research and regional connectivity assessment.</p><a class="featured-link" href="#gis-projects">View GIS Projects <i class="fas fa-arrow-down"></i></a></div>
-                </article>
-            </div>
+
         </section>
 
-        <section id="web-projects" class="web-projects section-shell">
-            <div class="section-heading">
-                <span>INTERACTIVE APPLICATIONS</span>
-                <h2>Web GIS & Web Development</h2>
-                <p>Hands-on projects using web technologies to turn maps and data into interactive experiences.</p>
+
+
+        <!-- =================================================
+             FEATURED PROJECTS
+        ================================================== -->
+
+        <section id="featured">
+
+            <div class="container">
+
+
+                <div class="section-header">
+
+                    <div class="section-label">
+                        SELECTED WORK
+                    </div>
+
+                    <h2>
+                        Featured Projects
+                    </h2>
+
+                    <p>
+                        Selected projects demonstrating my
+                        progression from GIS analysis to
+                        interactive Web GIS development.
+                    </p>
+
+                </div>
+
+
+
+                <div class="featured-grid">
+
+
+                    <!-- ==============================
+                         PROJECT 1
+                    =============================== -->
+
+                    <article class="featured-card">
+
+
+                        <div class="featured-image">
+
+                            <img
+                                src="{2E294BB1-F8ED-46C8-A1C7-87B85F631751}.png"
+                                alt="Gujarat Village Boundary Web GIS"
+                            >
+
+                            <span class="project-badge">
+                                WEB GIS
+                            </span>
+
+                        </div>
+
+
+                        <div class="featured-body">
+
+
+                            <div class="featured-tags">
+
+                                <span>
+                                    Leaflet.js
+                                </span>
+
+                                <span>
+                                    GeoJSON
+                                </span>
+
+                                <span>
+                                    JavaScript
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Gujarat Village Boundary Explorer
+                            </h3>
+
+
+                            <p>
+
+                                Interactive village-level boundary
+                                visualization built with Leaflet.js
+                                for exploring administrative
+                                polygons directly in the browser.
+
+                            </p>
+
+
+                            <a
+                                href="https://gujratvillageboundaryleafletjs.netlify.app"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="featured-link"
+                            >
+
+                                View Live Project
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ==============================
+                         PROJECT 2
+                    =============================== -->
+
+                    <article class="featured-card">
+
+
+                        <div class="featured-image">
+
+                            <img
+                                src="{172E14C2-6CBA-465E-B473-212B1FBAF501}.png"
+                                alt="Kerala Village Boundary Web GIS"
+                            >
+
+                            <span class="project-badge">
+                                WEB GIS
+                            </span>
+
+                        </div>
+
+
+                        <div class="featured-body">
+
+
+                            <div class="featured-tags">
+
+                                <span>
+                                    Leaflet.js
+                                </span>
+
+                                <span>
+                                    GeoJSON
+                                </span>
+
+                                <span>
+                                    JavaScript
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Kerala Village Boundary Explorer
+                            </h3>
+
+
+                            <p>
+
+                                Interactive Kerala village boundary
+                                visualization demonstrating
+                                polygon rendering, map navigation
+                                and spatial data visualization.
+
+                            </p>
+
+
+                            <a
+                                href="https://keralavillageboundary.netlify.app"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="featured-link"
+                            >
+
+                                View Live Project
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ==============================
+                         PROJECT 3
+                    =============================== -->
+
+                    <article class="featured-card">
+
+
+                        <div class="featured-image">
+
+                            <img
+                                src="img_arconline.png"
+                                alt="HSR Accessibility GIS Project"
+                            >
+
+                            <span class="project-badge">
+                                GIS
+                            </span>
+
+                        </div>
+
+
+                        <div class="featured-body">
+
+
+                            <div class="featured-tags">
+
+                                <span>
+                                    ArcGIS Pro
+                                </span>
+
+                                <span>
+                                    Spatial Analysis
+                                </span>
+
+                                <span>
+                                    Python
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                HSR Accessibility & Network Analysis
+                            </h3>
+
+
+                            <p>
+
+                                GIS-based accessibility and network
+                                analysis supporting high-speed rail
+                                corridor research and regional
+                                connectivity assessment.
+
+                            </p>
+
+
+                            <a
+                                href="#gis-projects"
+                                class="featured-link"
+                            >
+
+                                View GIS Projects
+
+                                <i class="fa-solid fa-arrow-down"></i>
+
+                            </a>
+
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
             </div>
-            <div class="projects-grid web-grid">
-                <article class="project-card modern-card">
-                    <div class="card-image"><img src="{2E294BB1-F8ED-46C8-A1C7-87B85F631751}.png" alt="Gujarat Village Boundary"><span class="status live">LIVE</span></div>
-                    <div class="card-content"><div class="tech-line"><span>Leaflet.js</span><span>GeoJSON</span></div><h3>Gujarat Village Boundary</h3><p>Interactive village boundary map with browser-based navigation and polygon visualization.</p><div class="project-links"><a href="https://gujratvillageboundaryleafletjs.netlify.app" target="_blank" rel="noopener" class="project-link primary-link"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
-                </article>
-                <article class="project-card modern-card">
-                    <div class="card-image"><img src="{172E14C2-6CBA-465E-B473-212B1FBAF501}.png" alt="Kerala Village Boundary"><span class="status live">LIVE</span></div>
-                    <div class="card-content"><div class="tech-line"><span>Leaflet.js</span><span>GeoJSON</span></div><h3>Kerala Village Boundary</h3><p>Village-level administrative boundary visualization using interactive web mapping.</p><div class="project-links"><a href="https://keralavillageboundary.netlify.app" target="_blank" rel="noopener" class="project-link primary-link"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
-                </article>
-                <article class="project-card modern-card">
-                    <div class="card-image"><img src="Mioamore.png" alt="Mio Amore store locator"><span class="status live">LIVE</span></div>
-                    <div class="card-content"><div class="tech-line"><span>Leaflet.js</span><span>JavaScript</span></div><h3>Mio Amore Store Locator</h3><p>Interactive store-location map with custom markers, popups and location-based exploration.</p><div class="project-links"><a href="https://mandalbitayan.github.io/Mioamore-store-location/" target="_blank" rel="noopener" class="project-link primary-link"><i class="fas fa-external-link-alt"></i> Live Demo</a><a href="https://github.com/mandalbitayan/Mioamore-store-location" target="_blank" rel="noopener" class="project-link secondary-link"><i class="fab fa-github"></i> GitHub</a></div></div>
-                </article>
-                <article class="project-card modern-card">
-                    <div class="card-image"><img src="Blinkit.png" alt="Blinkit clone"><span class="status live">LIVE</span></div>
-                    <div class="card-content"><div class="tech-line"><span>HTML</span><span>CSS</span><span>Responsive UI</span></div><h3>Blinkit Clone</h3><p>Responsive e-commerce interface recreation focused on layout, product cards, navigation and modern CSS.</p><div class="project-links"><a href="https://mandalbitayan.github.io/Accio_blinkit_project/" target="_blank" rel="noopener" class="project-link primary-link"><i class="fas fa-external-link-alt"></i> Live Demo</a><a href="https://github.com/mandalbitayan/Accio_blinkit_project" target="_blank" rel="noopener" class="project-link secondary-link"><i class="fab fa-github"></i> GitHub</a></div></div>
-                </article>
-            </div>
-            <div class="next-builds"><div><span class="coming-label">NEXT BUILDS</span><h3>React + Node.js + PostgreSQL</h3><p>Currently expanding into full-stack applications: blog CMS, authentication, CRUD APIs, e-commerce and database-backed Web GIS.</p></div><a href="#contact" class="outline-btn">Let's Build <i class="fas fa-arrow-right"></i></a></div>
+
         </section>
 
-        <section id="gis-projects" class="gis-projects section-shell">
-            <div class="section-heading">
-                <span>GIS & REMOTE SENSING</span>
-                <h2>GIS Projects</h2>
+
+
+        <!-- =================================================
+             WEB GIS PROJECTS
+        ================================================== -->
+
+        <section id="web-projects" class="webgis-section">
+
+            <div class="container">
+
+
+                <div class="section-header">
+
+                    <div class="section-label">
+                        INTERACTIVE APPLICATIONS
+                    </div>
+
+                    <h2>
+                        Web GIS & Web Development
+                    </h2>
+
+                    <p>
+                        Web applications and interactive mapping
+                        projects built using modern web technologies.
+                    </p>
+
+                </div>
+
+
+
+                <div class="projects-grid">
+
+
+                    <!-- Gujarat -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-image">
+
+                            <img
+                                src="{2E294BB1-F8ED-46C8-A1C7-87B85F631751}.png"
+                                alt="Gujarat Village Boundary"
+                            >
+
+                        </div>
+
+
+                        <div class="project-body">
+
+
+                            <div class="project-tags">
+
+                                <span>
+                                    Leaflet.js
+                                </span>
+
+                                <span>
+                                    GeoJSON
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Gujarat Village Boundary
+                            </h3>
+
+
+                            <p>
+                                Interactive village boundary map
+                                with browser-based navigation and
+                                polygon visualization.
+                            </p>
+
+
+                            <a
+                                href="https://gujratvillageboundaryleafletjs.netlify.app"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+
+                                Live Demo
+                                →
+                                
+                            </a>
+
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Kerala -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-image">
+
+                            <img
+                                src="{172E14C2-6CBA-465E-B473-212B1FBAF501}.png"
+                                alt="Kerala Village Boundary"
+                            >
+
+                        </div>
+
+
+                        <div class="project-body">
+
+
+                            <div class="project-tags">
+
+                                <span>
+                                    Leaflet.js
+                                </span>
+
+                                <span>
+                                    GeoJSON
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Kerala Village Boundary
+                            </h3>
+
+
+                            <p>
+                                Village-level administrative
+                                boundary visualization using
+                                interactive web mapping.
+                            </p>
+
+
+                            <a
+                                href="https://keralavillageboundary.netlify.app"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+
+                                Live Demo
+                                →
+
+                            </a>
+
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Mio Amore -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-image">
+
+                            <img
+                                src="Mioamore.png"
+                                alt="Mio Amore Store Locator"
+                            >
+
+                        </div>
+
+
+                        <div class="project-body">
+
+
+                            <div class="project-tags">
+
+                                <span>
+                                    Leaflet.js
+                                </span>
+
+                                <span>
+                                    JavaScript
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Mio Amore Store Locator
+                            </h3>
+
+
+                            <p>
+                                Interactive store-location map
+                                with custom markers, popups and
+                                location-based exploration.
+                            </p>
+
+
+                            <a
+                                href="https://mandalbitayan.github.io/Mioamore-store-location/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+
+                                Live Demo
+                                →
+
+                            </a>
+
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Blinkit -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-image">
+
+                            <img
+                                src="Blinkit.png"
+                                alt="Blinkit Clone"
+                            >
+
+                        </div>
+
+
+                        <div class="project-body">
+
+
+                            <div class="project-tags">
+
+                                <span>
+                                    HTML
+                                </span>
+
+                                <span>
+                                    CSS
+                                </span>
+
+                                <span>
+                                    JavaScript
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Blinkit Clone
+                            </h3>
+
+
+                            <p>
+                                Responsive e-commerce interface
+                                recreation focused on product
+                                cards, navigation and modern UI.
+                            </p>
+
+
+                            <a
+                                href="https://mandalbitayan.github.io/Accio_blinkit_project/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+
+                                Live Demo
+                                →
+
+                            </a>
+
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+
+                <!-- NEXT BUILDS -->
+
+                <div class="next-builds">
+
+
+                    <div>
+
+                        <div class="section-label">
+                            NEXT BUILDS
+                        </div>
+
+
+                        <h3>
+                            React + Node.js + PostgreSQL
+                        </h3>
+
+
+                        <p>
+
+                            Currently expanding into full-stack
+                            applications including Blog CMS,
+                            Authentication, CRUD APIs, E-commerce
+                            and database-backed Web GIS.
+
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="#contact"
+                        class="outline-btn"
+                    >
+
+                        Let's Build
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                </div>
+
+
             </div>
-            <div class="projects-grid">
-                <article class="project-card modern-card"><div class="card-image"><img src="pipeline.png" alt="Pipeline Connectivity"><span class="status">GIS</span></div><div class="card-content"><h3>Pipeline Connectivity</h3><p>Pipeline network mapping and utility infrastructure analysis using ArcGIS and AutoCAD workflows.</p></div></article>
-                <article class="project-card modern-card"><div class="card-image"><img src="broadband.png" alt="Broadband Connectivity"><span class="status">GIS</span></div><div class="card-content"><h3>Broadband Connectivity</h3><p>Network coverage and service-area mapping for broadband infrastructure using ArcGIS Pro.</p></div></article>
-                <article class="project-card modern-card"><div class="card-image"><img src="HSVP.png" alt="Haryana Shehri Vikas Pradhikaran"><span class="status">URBAN GIS</span></div><div class="card-content"><h3>Urban Development GIS</h3><p>GIS-supported urban development and planning workflows for infrastructure and governance.</p></div></article>
-                <article class="project-card modern-card"><div class="card-image"><img src="Urban sprawl.png" alt="Urban Sprawl Analysis"><span class="status">REMOTE SENSING</span></div><div class="card-content"><h3>Urban Sprawl Analysis</h3><p>Satellite imagery analysis, land-use classification and change detection using remote sensing workflows.</p></div></article>
-                <article class="project-card modern-card"><div class="card-image"><img src="LULC.png" alt="LULC Classification"><span class="status">REMOTE SENSING</span></div><div class="card-content"><h3>LULC Classification</h3><p>Land Use Land Cover classification using Sentinel-2 imagery, accuracy assessment and GIS map composition.</p></div></article>
-                <article class="project-card modern-card"><div class="card-image"><img src="Crop.png" alt="Crop Classification"><span class="status">AGRICULTURE</span></div><div class="card-content"><h3>Crop Classification</h3><p>Multi-temporal satellite analysis, vegetation indices and classification for agricultural mapping.</p></div></article>
-            </div>
+
         </section>
 
-        <section id="contact" class="contact section-shell">
-            <div class="section-heading light-heading"><span>GET IN TOUCH</span><h2>Let's Connect</h2><p>Open to GIS, Web GIS, geospatial data and development opportunities.</p></div>
-            <div class="contact-grid">
-                <a class="contact-card" href="mailto:mandalbitayan@gmail.com"><i class="fas fa-envelope"></i><div><small>Email</small><strong>mandalbitayan@gmail.com</strong></div></a>
-                <a class="contact-card" href="https://www.linkedin.com/in/bitayan-mandal-0820611a2/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i><div><small>LinkedIn</small><strong>View LinkedIn Profile</strong></div></a>
-                <a class="contact-card" href="tel:7908411651"><i class="fas fa-phone"></i><div><small>Phone</small><strong>7908411651</strong></div></a>
+
+
+        <!-- =================================================
+             GIS PROJECTS
+        ================================================== -->
+
+        <section id="gis-projects" class="gis-projects">
+
+            <div class="container">
+
+
+                <div class="section-header">
+
+                    <div class="section-label">
+                        GIS & REMOTE SENSING
+                    </div>
+
+                    <h2>
+                        GIS Projects
+                    </h2>
+
+                    <p>
+                        Selected GIS, remote sensing,
+                        urban and environmental projects.
+                    </p>
+
+                </div>
+
+
+
+                <div class="projects-grid">
+
+
+                    <!-- Pipeline -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-image">
+
+                            <img
+                                src="pipeline.png"
+                                alt="Pipeline Connectivity GIS Project"
+                            >
+
+                        </div>
+
+
+                        <div class="project-body">
+
+                            <div class="project-tags">
+
+                                <span>
+                                    ArcGIS
+                                </span>
+
+                                <span>
+                                    Infrastructure
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Pipeline Connectivity
+                            </h3>
+
+
+                            <p>
+                                Pipeline network mapping and
+                                utility infrastructure analysis
+                                using GIS workflows.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Broadband -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-image">
+
+                            <img
+                                src="broadband.png"
+                                alt="Broadband Connectivity GIS Project"
+                            >
+
+                        </div>
+
+
+                        <div class="project-body">
+
+                            <div class="project-tags">
+
+                                <span>
+                                    ArcGIS Pro
+                                </span>
+
+                                <span>
+                                    Network
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Broadband Connectivity
+                            </h3>
+
+
+                            <p>
+                                Network coverage and service-area
+                                mapping for broadband infrastructure.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Urban Development -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-image">
+
+                            <img
+                                src="HSVP.png"
+                                alt="Urban Development GIS Project"
+                            >
+
+                        </div>
+
+
+                        <div class="project-body">
+
+                            <div class="project-tags">
+
+                                <span>
+                                    Urban GIS
+                                </span>
+
+                                <span>
+                                    ArcGIS
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Urban Development GIS
+                            </h3>
+
+
+                            <p>
+                                GIS-supported urban development
+                                and planning workflows for
+                                infrastructure and governance.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Urban Sprawl -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-image">
+
+                            <img
+                                src="Urban sprawl.png"
+                                alt="Urban Sprawl Analysis"
+                            >
+
+                        </div>
+
+
+                        <div class="project-body">
+
+                            <div class="project-tags">
+
+                                <span>
+                                    Remote Sensing
+                                </span>
+
+                                <span>
+                                    GIS
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Urban Sprawl Analysis
+                            </h3>
+
+
+                            <p>
+                                Satellite imagery analysis,
+                                land-use classification and
+                                urban change detection.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- LULC -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-image">
+
+                            <img
+                                src="LULC.png"
+                                alt="Land Use Land Cover Classification"
+                            >
+
+                        </div>
+
+
+                        <div class="project-body">
+
+                            <div class="project-tags">
+
+                                <span>
+                                    Sentinel-2
+                                </span>
+
+                                <span>
+                                    Remote Sensing
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                LULC Classification
+                            </h3>
+
+
+                            <p>
+                                Land Use Land Cover classification
+                                using satellite imagery and
+                                GIS-based analysis.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Crop -->
+
+                    <article class="project-card">
+
+
+                        <div class="project-image">
+
+                            <img
+                                src="Crop.png"
+                                alt="Crop Classification"
+                            >
+
+                        </div>
+
+
+                        <div class="project-body">
+
+                            <div class="project-tags">
+
+                                <span>
+                                    Agriculture
+                                </span>
+
+                                <span>
+                                    Remote Sensing
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Crop Classification
+                            </h3>
+
+
+                            <p>
+                                Satellite-based crop mapping using
+                                multi-temporal imagery and
+                                vegetation-based analysis.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
             </div>
+
         </section>
+
+
+
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <section id="contact" class="contact-section">
+
+            <div class="container">
+
+
+                <div class="section-header">
+
+                    <div class="section-label">
+                        GET IN TOUCH
+                    </div>
+
+                    <h2>
+                        Let's Connect
+                    </h2>
+
+                    <p>
+                        Open to GIS, Web GIS, geospatial data
+                        and development opportunities.
+                    </p>
+
+                </div>
+
+
+
+                <div class="contact-grid">
+
+
+                    <div class="contact-content">
+
+                        <h2>
+                            Let's build something
+                            useful with maps.
+                        </h2>
+
+
+                        <p>
+
+                            I am interested in GIS, Web GIS,
+                            geospatial data analysis, remote sensing
+                            and full-stack geospatial applications.
+
+                        </p>
+
+
+                    </div>
+
+
+
+                    <div class="contact-links">
+
+
+                        <a
+                            href="mailto:mandalbitayan@gmail.com"
+                            class="contact-link"
+                        >
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <span>
+                                mandalbitayan@gmail.com
+                            </span>
+
+                        </a>
+
+
+
+                        <a
+                            href="https://www.linkedin.com/in/bitayan-mandal-0820611a2/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-link"
+                        >
+
+                            <i class="fa-brands fa-linkedin"></i>
+
+                            <span>
+                                LinkedIn Profile
+                            </span>
+
+                        </a>
+
+
+
+                        <a
+                            href="tel:7908411651"
+                            class="contact-link"
+                        >
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <span>
+                                7908411651
+                            </span>
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
     </main>
 
-    <footer><p>© <span id="year"></span> Bitayan Mandal · GIS Engineer & Web GIS Developer</p></footer>
-    <script src="script.js"></script>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div class="container footer-inner">
+
+
+            <p>
+                © <span id="year"></span>
+                Bitayan Mandal · GIS Engineer & Web GIS Developer
+            </p>
+
+
+            <div class="footer-links">
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#featured">
+                    Projects
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        /* Current Year */
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+
+        /* Smooth scrolling */
+
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+            link.addEventListener("click", function (event) {
+
+                const targetId = this.getAttribute("href");
+
+                if (targetId === "#") return;
+
+                const target = document.querySelector(targetId);
+
+                if (target) {
+
+                    event.preventDefault();
+
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+
 </body>
+
 </html>
